@@ -6,7 +6,7 @@ const emit = defineEmits<{
 
 <template>
   <div class="game-controls">
-    <button @click="emit('restarted')">Restart Game</button>
+    <button @click="emit('restarted')">🔄 Restart Game</button>
   </div>
 </template>
 
@@ -18,17 +18,25 @@ const emit = defineEmits<{
 }
 
 button {
-  padding: 0.5rem 2rem;
-  font-size: 1rem;
+  padding: 0.75rem 2.5rem;
+  font-size: 1.1rem;
   border: none;
-  border-radius: 4px;
-  background: #42b983;
-  color: white;
+  border-radius: 8px;
+  background: white;
+  color: #42b983;
   cursor: pointer;
   font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background: #369970;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  background: #f0f0f0;
+}
+
+button:active {
+  transform: translateY(0);
 }
 </style>
