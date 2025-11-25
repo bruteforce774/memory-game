@@ -7,7 +7,7 @@ const cards = ref([
   { id: 1, emoji: '🎈', isOpen: false },
   { id: 2, emoji: '🍎', isOpen: false },
   { id: 3, emoji: '🍋', isOpen: false },
-  { id: 4, emoji: '🍓', isOpen: false},
+  { id: 4, emoji: '🍓', isOpen: false },
   { id: 5, emoji: '🍉', isOpen: false },
   { id: 6, emoji: '🍇', isOpen: false },
   { id: 7, emoji: '🍒', isOpen: false },
@@ -21,3 +21,8 @@ function handleCardOpened(id: number) {
   console.log('Card opened:', id)
 }
 </script>
+
+<template>
+  <Card v-for="card in cards" :key="card.id" :emoji="card.emoji" :is-open="card.isOpen"
+    @opened="handleCardOpened(card.id)" />
+</template>

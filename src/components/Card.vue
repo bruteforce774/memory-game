@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const props = defineProps<{
-  id: number,
   emoji: string,
   isOpen: boolean;
 }>();
