@@ -6,12 +6,15 @@ const cards = ref([
   { id: 1, emoji: '🎈', isOpen: false },
   { id: 2, emoji: '🍎', isOpen: false },
   { id: 3, emoji: '🍋', isOpen: false },
-  { id: 4, emoji: '🍓', isOpen: false },
+  { id: 4, emoji: '🍉', isOpen: false },
   { id: 5, emoji: '🍉', isOpen: false },
   { id: 6, emoji: '🍇', isOpen: false },
-  { id: 7, emoji: '🍒', isOpen: false },
-  { id: 8, emoji: '🥝', isOpen: false },
-  { id: 9, emoji: '🍌', isOpen: false }
+  { id: 7, emoji: '🥝', isOpen: false },
+  { id: 8, emoji: '🍋', isOpen: false },
+  { id: 9, emoji: '🍎', isOpen: false },
+  { id: 10, emoji: '🥝', isOpen: false },
+  { id: 11, emoji: '🍇', isOpen: false },
+  { id: 12, emoji: '🎈', isOpen: false },
 ])
 
 function handleCardOpened(id: number) {
