@@ -12,7 +12,7 @@ const cards = ref([
   { id: 6, emoji: '🍇', isOpen: false },
   { id: 7, emoji: '🍒', isOpen: false },
   { id: 8, emoji: '🥝', isOpen: false },
-  // ... more cards
+  { id: 9, emoji: '🍌', isOpen: false }
 ])
 
 // Handle when a card is clicked
