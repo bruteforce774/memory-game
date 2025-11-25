@@ -18,7 +18,12 @@ const cards = ref([
 ])
 
 function handleCardOpened(id: number) {
-  console.log('Card opened:', id)
+  // Find the card 
+  const card = cards.value.find(c => c.id === id)
+
+  if (card) {
+    card.isOpen = true
+  }
 }
 </script>
 
