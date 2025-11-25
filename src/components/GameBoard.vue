@@ -17,14 +17,23 @@ const cards = ref([
   { id: 12, emoji: '🎈', isOpen: false },
 ])
 
-function handleCardOpened(id: number) {
-  // Find the card 
-  const card = cards.value.find(c => c.id === id)
+const cardsOpened = ref(0);
 
+function handleCardOpened(id: number) {
+  // Count how many cards are currently open
+  const openCards = cards.value.filter(c => c.isOpen)
+  
+  // Don't allow more than 2 open
+  if (openCards.length >= 2) {
+    return
+  }
+
+  const card = cards.value.find(c => c.id === id)
   if (card) {
     card.isOpen = true
   }
 }
+
 </script>
 
 <template>
