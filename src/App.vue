@@ -8,7 +8,6 @@ import ScorePanel from './components/ScorePanel.vue';
 <template>
     <GameBoard />
     <GameControls />
-    <Card />
     <ScorePanel />
 </template>
 
