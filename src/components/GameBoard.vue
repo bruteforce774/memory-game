@@ -6,6 +6,12 @@ import Card from './Card.vue'
 const cards = ref([
   { id: 1, emoji: '🎈', isOpen: false },
   { id: 2, emoji: '🍎', isOpen: false },
+  { id: 3, emoji: '🍋', isOpen: false },
+  { id: 4, emoji: '🍓', isOpen: false},
+  { id: 5, emoji: '🍉', isOpen: false },
+  { id: 6, emoji: '🍇', isOpen: false },
+  { id: 7, emoji: '🍒', isOpen: false },
+  { id: 8, emoji: '🥝', isOpen: false },
   // ... more cards
 ])
 
